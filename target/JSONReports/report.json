@@ -1,0 +1,48 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-01-04T12:30:39.620Z",
+        "line": 2,
+        "name": "API auto",
+        "description": "",
+        "id": "taxdoo-api-testing;api-auto",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3284000000,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "User calls the Rest api",
+            "match": {
+              "location": "stepDefinition.TaxdooApiSteps.callApiandCheckResponse()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1463000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Send create user request",
+            "match": {
+              "location": "stepDefinition.TaxdooApiSteps.createUser()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "TaxDoo API Testing",
+    "description": "",
+    "id": "taxdoo-api-testing",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/taxdooApi_testing.feature",
+    "tags": []
+  }
+]
